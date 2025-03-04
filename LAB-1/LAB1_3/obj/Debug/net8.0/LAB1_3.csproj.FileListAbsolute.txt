@@ -1,0 +1,15 @@
+D:\C#\LABS\LAB1_3\bin\Debug\net8.0\LAB1_3.exe
+D:\C#\LABS\LAB1_3\bin\Debug\net8.0\LAB1_3.deps.json
+D:\C#\LABS\LAB1_3\bin\Debug\net8.0\LAB1_3.runtimeconfig.json
+D:\C#\LABS\LAB1_3\bin\Debug\net8.0\LAB1_3.dll
+D:\C#\LABS\LAB1_3\bin\Debug\net8.0\LAB1_3.pdb
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\LAB1_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\LAB1_3.AssemblyInfoInputs.cache
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\LAB1_3.AssemblyInfo.cs
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\LAB1_3.csproj.CoreCompileInputs.cache
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\LAB1_3.sourcelink.json
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\LAB1_3.dll
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\refint\LAB1_3.dll
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\LAB1_3.pdb
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\LAB1_3.genruntimeconfig.cache
+D:\C#\LABS\LAB1_3\obj\Debug\net8.0\ref\LAB1_3.dll

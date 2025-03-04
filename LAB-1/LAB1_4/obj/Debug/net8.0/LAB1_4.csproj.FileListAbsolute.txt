@@ -1,0 +1,15 @@
+D:\C#\LABS\LAB1_4\bin\Debug\net8.0\LAB1_4.exe
+D:\C#\LABS\LAB1_4\bin\Debug\net8.0\LAB1_4.deps.json
+D:\C#\LABS\LAB1_4\bin\Debug\net8.0\LAB1_4.runtimeconfig.json
+D:\C#\LABS\LAB1_4\bin\Debug\net8.0\LAB1_4.dll
+D:\C#\LABS\LAB1_4\bin\Debug\net8.0\LAB1_4.pdb
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\LAB1_4.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\LAB1_4.AssemblyInfoInputs.cache
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\LAB1_4.AssemblyInfo.cs
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\LAB1_4.csproj.CoreCompileInputs.cache
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\LAB1_4.sourcelink.json
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\LAB1_4.dll
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\refint\LAB1_4.dll
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\LAB1_4.pdb
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\LAB1_4.genruntimeconfig.cache
+D:\C#\LABS\LAB1_4\obj\Debug\net8.0\ref\LAB1_4.dll
