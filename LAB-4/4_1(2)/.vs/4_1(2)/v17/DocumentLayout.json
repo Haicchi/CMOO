@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\LABS\\LAB-4\\4_1(2)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F014DE-1E93-49B4-B09E-44BE96751D9D}|..\\4_2\\4_2.csproj|d:\\c#\\labs\\lab-4\\4_2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BD620F7-CCE9-40DE-B7D8-630E52402DE9}|4_1(2).csproj|d:\\c#\\labs\\lab-4\\4_1(2)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BD620F7-CCE9-40DE-B7D8-630E52402DE9}|4_1(2).csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 348,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\LABS\\LAB-4\\4_2\\Program.cs",
+              "RelativeDocumentMoniker": "..\\4_2\\Program.cs",
+              "ToolTip": "D:\\C#\\LABS\\LAB-4\\4_2\\Program.cs",
+              "RelativeToolTip": "..\\4_2\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T15:58:02.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\LABS\\LAB-4\\4_1(2)\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\C#\\LABS\\LAB-4\\4_1(2)\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:43:19.086Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
