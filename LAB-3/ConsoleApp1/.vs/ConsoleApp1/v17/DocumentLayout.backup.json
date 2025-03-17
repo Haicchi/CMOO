@@ -29,9 +29,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C#\\LABS\\LAB-3\\Lab3_2\\Program.cs",
               "RelativeDocumentMoniker": "..\\Lab3_2\\Program.cs",
-              "ToolTip": "D:\\C#\\LABS\\LAB-3\\Lab3_2\\Program.cs",
-              "RelativeToolTip": "..\\Lab3_2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAJAAAAAAAAAA==",
+              "ToolTip": "D:\\C#\\LABS\\LAB-3\\Lab3_2\\Program.cs*",
+              "RelativeToolTip": "..\\Lab3_2\\Program.cs*",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowEgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T15:54:27.632Z",
               "EditorCaption": ""
@@ -42,11 +42,12 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C#\\LABS\\LAB-3\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\C#\\LABS\\LAB-3\\ConsoleApp1\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAIwFgAAABEAAAAAAAAAA==",
+              "ToolTip": "D:\\C#\\LABS\\LAB-3\\ConsoleApp1\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAWwGEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:06:15.641Z"
+              "WhenOpened": "2025-03-14T14:06:15.641Z",
+              "EditorCaption": ""
             }
           ]
         }

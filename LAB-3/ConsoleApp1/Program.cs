@@ -39,10 +39,7 @@
             {
                 arr[i] += sum;
             }
-            for(int i = 0; i < arr.Length; i++)
-            {
-                Console.Write($"{arr[i]} ");
-            }
+            
 
 
 
@@ -52,7 +49,9 @@
         {
             
             int z = 0;
-            const int razmer = 10;
+            int razmer = 0;
+            Console.WriteLine("Type in the size of array");
+            razmer = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[razmer];
             Console.WriteLine("How you want to fill array(1-handly.2-Random from 1 to 10.3-Preset from file)");
             z = Convert.ToInt32(Console.ReadLine());
@@ -83,7 +82,7 @@
                         {
                             arr[i] = int.Parse(sr.ReadLine());
                         }
-                        
+
                     };
                     break;
                 default: Console.WriteLine("Wrong operation");break;
@@ -100,6 +99,10 @@
             Console.WriteLine(sumznak);
             Console.WriteLine();
             DobavTri(arr, sumnum, sumznak);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"{arr[i]} ");
+            }
         }
     }
 }

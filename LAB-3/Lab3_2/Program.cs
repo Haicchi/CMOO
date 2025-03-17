@@ -65,12 +65,13 @@
                 case 3:
                     using (StreamReader sr = new StreamReader("Preset.TXT"))
                     {
+                        string[] lines = sr.ReadToEnd().Split();
+                        X = new double[lines.Length];
                         for (int i = 0; i < X.Length; i++)
                         {
-                            X[i] = double.Parse(sr.ReadLine());
+                            X[i] = double.Parse(lines[i]);
                         }
-
-                    };
+                    }
                     break;
                 default: Console.WriteLine("Wrong operation"); break;
             }
