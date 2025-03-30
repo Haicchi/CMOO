@@ -1,0 +1,15 @@
+D:\C#\LABS\LAB-5\CHUPINAZES\bin\Debug\net8.0\CHUPINAZES.exe
+D:\C#\LABS\LAB-5\CHUPINAZES\bin\Debug\net8.0\CHUPINAZES.deps.json
+D:\C#\LABS\LAB-5\CHUPINAZES\bin\Debug\net8.0\CHUPINAZES.runtimeconfig.json
+D:\C#\LABS\LAB-5\CHUPINAZES\bin\Debug\net8.0\CHUPINAZES.dll
+D:\C#\LABS\LAB-5\CHUPINAZES\bin\Debug\net8.0\CHUPINAZES.pdb
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\CHUPINAZES.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\CHUPINAZES.AssemblyInfoInputs.cache
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\CHUPINAZES.AssemblyInfo.cs
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\CHUPINAZES.csproj.CoreCompileInputs.cache
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\CHUPINAZES.sourcelink.json
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\CHUPINAZES.dll
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\refint\CHUPINAZES.dll
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\CHUPINAZES.pdb
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\CHUPINAZES.genruntimeconfig.cache
+D:\C#\LABS\LAB-5\CHUPINAZES\obj\Debug\net8.0\ref\CHUPINAZES.dll
