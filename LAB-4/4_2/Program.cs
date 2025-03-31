@@ -13,7 +13,7 @@ namespace _4_2
         }
         static void Main(string[] args)
         {
-            Regex check = new Regex(@"^([A-Za-zА-Яа-яЁё]+(?:\s[A-Za-zА-Яа-яЁё]+)*)$");
+            Regex check = new Regex(@"^[\p{L}\s]+$");
             string vvod = String.Empty;
             int z = 0;
             Console.WriteLine("How do you want to fill words (1-from keyboard.2-From file)");
@@ -29,6 +29,8 @@ namespace _4_2
                     {
                         vvod = sr.ReadToEnd();
                     }
+                    
+
                     break;
             }
             if (!check.IsMatch(vvod))

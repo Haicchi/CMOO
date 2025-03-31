@@ -9,6 +9,7 @@ namespace CHUPINAZES
 
     internal class Modul
     {
+        
         public Person ProjectKer { get; set; }
         public string modulName { get; set; }
         public double modulCap { get; set; }

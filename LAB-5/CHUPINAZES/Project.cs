@@ -50,7 +50,7 @@ namespace CHUPINAZES
             get { return valueofProject; }
             set
             {
-                if (!double.TryParse(value.ToString(), out double parsed))
+                if (!double.TryParse(value.ToString(), out double parsed)&& value < 0)
                 {
                     throw new ArgumentException("Value must be a number");
                 }
