@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CHUPINAZES")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b23f22f6d8c3cd129e721e476dc6c42943ddc900")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c29c152551c174183ed43f373ecfeeba86c2978")]
 [assembly: System.Reflection.AssemblyProductAttribute("CHUPINAZES")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CHUPINAZES")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
