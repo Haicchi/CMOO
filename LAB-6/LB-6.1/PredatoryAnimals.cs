@@ -4,36 +4,25 @@ namespace LB_6._1;
 
 public class PredatoryAnimals : WildAnimals
 {
-    private string whereCanBe;
+    
     private double avgCountOfAnimals;
     private double rateOfChange;
 
-    public PredatoryAnimals(string nameAnimal, int ageAnimal, double weightAnimalstring,string whereCanBe, double avgCountOfAnimals, double rateOfChange) : base(nameAnimal, ageAnimal, weightAnimalstring)
+    public PredatoryAnimals(string nameAnimal, int ageAnimal, int weightAnimal,string whereCanBe, double avgCountOfAnimals, double rateOfChange) : base(nameAnimal, ageAnimal, weightAnimal, whereCanBe)
     {
-        this.whereCanBe = whereCanBe;
+       
         this.avgCountOfAnimals = avgCountOfAnimals;
         this.rateOfChange = rateOfChange;
     }
 
     public PredatoryAnimals():base()
     {
-        whereCanBe = "";
+        
         avgCountOfAnimals = 0;
         rateOfChange = 0.0;
     }
 
-    public string WhereCanBe
-    {
-        get { return whereCanBe; }
-        set
-        {
-            if (string.IsNullOrEmpty(value))
-            {
-                throw new ArgumentException("Project name must not be empty");
-            }
-            whereCanBe = value;
-        }
-    }
+    
 
     public double AvgCountOfAnimals
     {
@@ -70,6 +59,6 @@ public class PredatoryAnimals : WildAnimals
 
     public override string ToString()
     {
-        return base.ToString()+$" WhereCanBe: {whereCanBe} Average Count: {avgCountOfAnimals} RateOfChange: {rateOfChange}";
+        return base.ToString()+$" Average Count: {avgCountOfAnimals} RateOfChange: {rateOfChange}";
     }
 }

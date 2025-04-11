@@ -8,7 +8,9 @@ public class WildAnimals
     protected int ageAnimal;
 
 
-    protected double weightAnimal;
+    protected int weightAnimal;
+    
+    protected string whereCanBe;
 
     public string NameAnimal
     {
@@ -41,7 +43,7 @@ public class WildAnimals
     {get { return weightAnimal; }
         set
         {
-            if (!double.TryParse(value.ToString(), out double parsed2))
+            if (!int.TryParse(value.ToString(), out int parsed2))
             {
                 throw new ArgumentException("Project age animal must be an integer");
             }
@@ -49,25 +51,41 @@ public class WildAnimals
         }
         
     }
+    public string WhereCanBe
+    {
+        get { return whereCanBe; }
+        set
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                throw new ArgumentException("Project name must not be empty");
+            }
+            whereCanBe = value;
+        }
+    }
     
 
-    public WildAnimals(string nameAnimal, int ageAnimal, double weightAnimal)
+    public WildAnimals(string nameAnimal, int ageAnimal, int weightAnimal,string whereCanBe)
     {
         this.nameAnimal = nameAnimal;
         this.ageAnimal = ageAnimal;
         this.weightAnimal = weightAnimal;
+        this.whereCanBe = whereCanBe;
     }
 
     public WildAnimals()
     {
         nameAnimal = "";
         ageAnimal = 0;
-        weightAnimal = 0.0;
+        weightAnimal = 0;
+        whereCanBe = "";
     }
+
+    
 
     public override string ToString()
     {
-        return $"Animal: {nameAnimal}, Age: {ageAnimal}, Weight: {weightAnimal}"; 
+        return $"Animal: {nameAnimal}, Age: {ageAnimal}, Weight: {weightAnimal}, WhereCanBe: {whereCanBe}"; 
     }
 }
     
