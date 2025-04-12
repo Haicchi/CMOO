@@ -57,6 +57,10 @@ public class PredatoryAnimals : WildAnimals
         }
     }
 
+    public override void AnimalType()
+    {
+        Console.WriteLine("Predatory animal type");
+    }
     public override string ToString()
     {
         return base.ToString()+$" Average Count: {avgCountOfAnimals} RateOfChange: {rateOfChange}";
