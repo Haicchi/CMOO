@@ -20,7 +20,7 @@ static class Fabric
     {
         for (int i = 0; i < shop.Length; i++)
         {
-            if (shop[i].razdelMagazin == checker)
+            if (shop[i].KonRazdelMagazin == checker)
             {
                 Console.WriteLine(shop[i].ToString());
             }
@@ -31,7 +31,7 @@ static class Fabric
     {
         for (int i = 0; i < shop.Length; i++)
         {
-            if (shop[i].productCost <= price)
+            if (shop[i].ProductCost <= price)
             {
                 Console.WriteLine(shop[i].ToString());
             }

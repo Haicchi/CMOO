@@ -8,7 +8,7 @@ namespace _6_2
 {
     class Bread:Product
     {
-        public string breadType;
+        private string breadType;
         public string BreadType
         {
             get { return breadType;} set{if(string.IsNullOrEmpty(value)) breadType = value;} 

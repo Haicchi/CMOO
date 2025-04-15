@@ -57,9 +57,9 @@ public class PredatoryAnimals : WildAnimals
         }
     }
 
-    public override void AnimalType()
+    public override string AnimalType()
     {
-        Console.WriteLine("Predatory animal type");
+        return "Predatory animal type";
     }
     public override string ToString()
     {

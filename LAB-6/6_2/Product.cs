@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace _6_2
 {
     abstract class Product
-    { 
-        public string productName;
-        public int productCost;
-        public int productId;
-        public string productType;
+    {
+        private string productName;
+        protected int productCost;
+        private int productId;
+        private string productType;
 
-        public string razdelMagazin;
+        protected string razdelMagazin;
         
 
         public Product()

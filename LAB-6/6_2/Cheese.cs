@@ -2,7 +2,7 @@
 
 internal class Cheese:Product
 {
-    public string cheeseType;
+    private string cheeseType;
     
     public string CheeseType
     {

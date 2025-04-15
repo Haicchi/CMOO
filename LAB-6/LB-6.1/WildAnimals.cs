@@ -81,9 +81,9 @@ public class WildAnimals
         whereCanBe = "";
     }
 
-    public virtual void AnimalType()
+    public virtual string AnimalType()
     {
-        Console.WriteLine("Wild animal type");
+        return "Wild animal type";
     }
 
     public override string ToString()

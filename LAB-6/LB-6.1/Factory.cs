@@ -11,14 +11,15 @@ public static class Factory
             if (zoopark[i] is PredatoryAnimals predator)
             {
                 Console.WriteLine(predator.ToString());
-                predator.AnimalType();
+                Console.WriteLine(predator.AnimalType());
+                
                 predator.IsFine();
                 
             }
             else
             {
                 Console.WriteLine(zoopark[i].ToString());
-                zoopark[i].AnimalType();
+                Console.WriteLine(zoopark[i].AnimalType());
                 
             }
 

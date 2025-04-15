@@ -2,7 +2,7 @@
 
 internal class DairyProducts : Product
 {
-    public string dairyProductType;
+    private string dairyProductType;
     
     public string DairyProductType
     {
