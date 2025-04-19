@@ -1,0 +1,15 @@
+D:\C#\LABS\LAB-7\LAB 7-1\bin\Debug\net9.0\LAB 7-1.exe
+D:\C#\LABS\LAB-7\LAB 7-1\bin\Debug\net9.0\LAB 7-1.deps.json
+D:\C#\LABS\LAB-7\LAB 7-1\bin\Debug\net9.0\LAB 7-1.runtimeconfig.json
+D:\C#\LABS\LAB-7\LAB 7-1\bin\Debug\net9.0\LAB 7-1.dll
+D:\C#\LABS\LAB-7\LAB 7-1\bin\Debug\net9.0\LAB 7-1.pdb
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\LAB 7-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\LAB 7-1.AssemblyInfoInputs.cache
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\LAB 7-1.AssemblyInfo.cs
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\LAB 7-1.csproj.CoreCompileInputs.cache
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\LAB 7-1.sourcelink.json
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\LAB 7-1.dll
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\refint\LAB 7-1.dll
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\LAB 7-1.pdb
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\LAB 7-1.genruntimeconfig.cache
+D:\C#\LABS\LAB-7\LAB 7-1\obj\Debug\net9.0\ref\LAB 7-1.dll

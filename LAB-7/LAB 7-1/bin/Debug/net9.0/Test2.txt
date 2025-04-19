@@ -1,0 +1,3 @@
+Vasya Bobuh;dev;1,5
+Max Klingen;lvl;5,4
+Max Vava;dev;5,4

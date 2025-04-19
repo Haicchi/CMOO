@@ -1,0 +1,3 @@
+Person: Dima Bobuh ModulName: dev ModulCap: 1,5
+Person: Vlad Lolo ModulName: mod ModulCap: 1,5
+Person: Pasha Klingen ModulName: lvl ModulCap: 5,4
