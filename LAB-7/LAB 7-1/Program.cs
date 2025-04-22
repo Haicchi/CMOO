@@ -11,11 +11,11 @@ class Program
 {
     static void PrintModules(Project container)
     {
-        Console.WriteLine($"Container has {container.Count} modules:");
-        int index = 1;
-        foreach (Modul module in container)
+        Console.WriteLine($"Количество модулей: {container.Count}");
+    
+        for (int i = 0; i < container.Count; i++)
         {
-            Console.WriteLine($"{index++}: {module.ToString()}");
+            Console.WriteLine($"{i+1}: {container[i]}");
         }
     }
 
@@ -84,7 +84,15 @@ class Program
         moduleContainer.Add(q2);
         PrintModules(moduleContainer);
         string filename = "Test.txt";
-        moduleContainer.Save(filename);
+        try
+        {
+            moduleContainer.Save(filename);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
         Console.WriteLine(moduleContainer.IsDataSaved);
         Project container2 = new Project("Container Project", ProjectType.Training, DateTime.Now.AddMonths(3), 3000, new Modul[0]);
         for (int i = 0; i < 3; i++)
@@ -94,11 +102,26 @@ class Program
         PrintModules(container2);
 
         string seconfilename = "Test2.txt";
-        container2.Save(seconfilename);
+        try
+        {
+            container2.Save(seconfilename);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
         Console.WriteLine(container2.IsDataSaved);
         
         Project testload = new Project("Container Project", ProjectType.Training, DateTime.Now.AddMonths(3), 3000, new Modul[0]);
-        testload.Load(filename);
+       
+        try
+        {
+            testload.Load(filename);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }  
         PrintModules(testload);
         
     }
