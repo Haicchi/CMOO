@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace LAB_7_1;
 
-internal class Project : IFileContainer, IEnumerable, IEnumerator
+internal class Project : IFileContainer<Modul>, IEnumerable<Modul>, IEnumerator<Modul>
 {
     private string projectName;
     private ProjectType projectType;
@@ -33,7 +33,7 @@ internal class Project : IFileContainer, IEnumerable, IEnumerator
         projectType = ProjectType.Commercial;
         endDate = DateTime.Now;
         valueofProject = 0;
-        modul = new Modul[0]; // Инициализация пустого массива
+        modul = new Modul[0];
     }
 
     public override string ToString()
@@ -102,7 +102,6 @@ internal class Project : IFileContainer, IEnumerable, IEnumerator
             endDate = parsed;
         }
     }
-
     public Modul[] Modul
     {
         get { return modul; }
@@ -116,6 +115,8 @@ internal class Project : IFileContainer, IEnumerable, IEnumerator
             modul = value;
         }
     }
+
+
 
     public void AddModules(params Modul[] modules)
     {
@@ -153,39 +154,43 @@ internal class Project : IFileContainer, IEnumerable, IEnumerator
 
 
 
-    public void Add(object element)
+    public void Add(Modul element)
     {
         Array.Resize(ref modul, modul.Length + 1);
         modul[modul.Length - 1] = element as Modul;
         IsDataSaved = false;
     }
 
-    public void Delete(object element)
+    public void Delete(Modul element)
     {
         Modul[] temp = new Modul[modul.Length - 1];
         int index = Array.IndexOf(modul, element);
         if (index == null)
         {
             Console.WriteLine("Cannot delete null element");
-
+        
         }
-
-        for (int i = 0, j = 0; i < modul.Length; i++)
+        
+        for (int i = 0; i < modul.Length; i++)
         {
             if (i != index)
             {
-                temp[j] = modul[i];
-                j++;
+                temp[i] = modul[i];
+                
             }
         }
-
+        
         modul = temp;
         IsDataSaved = false;
+        // int index = Array.IndexOf(modul, element);
+        // Array.Clear(modul, index, 1);
+        // IsDataSaved = false;
+        
     }
 
 
 
-    public Object this[int index]
+    public Modul this[int index]
     {
         set
         {
@@ -249,7 +254,10 @@ internal class Project : IFileContainer, IEnumerable, IEnumerator
 
     public bool IsDataSaved { get; private set; }
 
-    
+    public Modul Current => modul[position];
+     
+
+    object IEnumerator.Current => modul[position];
 
     IEnumerator IEnumerable.GetEnumerator()
     {
@@ -260,35 +268,30 @@ internal class Project : IFileContainer, IEnumerable, IEnumerator
     {
         Array.Sort(comparer);
     }
-   private int position = 0;
-   private int count = 0;
-   public IEnumerator GetEnumerator()
-   {
-       return this;
-   }
-   
-   public bool MoveNext()
-   {
-       position++;
-       return position < count;
-   }
+    private int position = 0;
+    private int count = 0;
+    public IEnumerator<Modul> GetEnumerator()
+    {
+        return this;
+    }
+
+    public bool MoveNext()
+    {
+        position++;
+        return position < count;
+    }
+
+    public void Reset()
+    {
+        position = 0;
+    }
+
+
+    public void Dispose()
+    {
         
-   public void Reset()
-   {
-       position = 0;
-   }
-        
-   public object Current
-   {
-       get
-       {
-           if (position < 0 || position >= count)
-           {
-               throw new InvalidOperationException();
-           }
-           return modul[position];
-       }
-   }
+    }
+    
 
 
 

@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 
+
+
 namespace LAB_7_1;
 
-public interface IContainer
+public interface IContainer<T>
 {
     int Count { get; }
-    Object this[ int index ] { get;set;}
+    T this[int index] { get; set; }
 
-    void Add(Object element);
-    void Delete(Object element);
-    
+    void Add(T element);
+    void Delete(T element);
+
 }

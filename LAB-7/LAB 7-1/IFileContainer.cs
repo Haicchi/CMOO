@@ -2,9 +2,9 @@
 
 namespace LAB_7_1;
 
-public interface IFileContainer:IContainer
+public interface IFileContainer<T> : IContainer<T>
 {
-    void  Save(string fileName);
-    void  Load(string fileName);
+    void Save(string fileName);
+    void Load(string fileName);
     Boolean IsDataSaved { get; }
 }

@@ -2,7 +2,7 @@
 
 namespace LAB_7_1;
 
-public class Person:IComparable,ICloneable
+public class Person: IComparable<Person>, ICloneable
 {
     string firstName;
     string lastName;
@@ -32,9 +32,10 @@ public class Person:IComparable,ICloneable
         return $"Firstname: {firstName}|Lastname: {lastName}";
     }
 
-    public int CompareTo(object obj)
+    public int CompareTo(Person obj)
     {
-        Person temp = (Person)obj;
+        
+        Person temp = obj as Person;
         if (this.firstName.Length > temp.firstName.Length) return 1;
         if (this.firstName.Length < temp.firstName.Length) return -1;
         return 0;
