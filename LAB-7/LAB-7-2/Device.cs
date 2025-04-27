@@ -1,6 +1,6 @@
 ﻿namespace LAB_7_2;
 
-public class Device
+public class Device:ICloneable,IComparable<Device>,IDevice<Device>
 {
     private string deviceType;
     private string deviceName;
@@ -17,6 +17,11 @@ public class Device
         this.doesHaveEngine = doesHaveEngine;
         this.isElectric = isElectric;
         
+    }
+
+    public string DeviceInfo()
+    {
+        return $"Basic info about device";
     }
 
     public Device()
@@ -105,10 +110,23 @@ public class Device
         }
     }
 
+    public int CompareTo(Device other)
+    {
+        Device temp = other as Device;
+        if (this.weight < temp.weight) return -1;
+        if (this.weight > temp.weight) return 1;
+        return 0;
+    }
+
     public override string ToString()
     {
         return $"Device Type ={deviceType} | Device Name ={deviceName} | Weight ={weight}  | WhereCreated ={whereCreated} | DoesHaveEngine ={doesHaveEngine} | IsElectric ={isElectric}"; 
         
+    }
+
+    public object Clone()
+    {
+        return new Device(this.deviceType, this.deviceName, this.weight, this.whereCreated, this.doesHaveEngine,this.isElectric);
     }
 
     public virtual string DoesHaveEngine()
