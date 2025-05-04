@@ -1,0 +1,14 @@
+C:\Users\Professional\source\repos\8-1Test\bin\Debug\net8.0\8-1Test.exe
+C:\Users\Professional\source\repos\8-1Test\bin\Debug\net8.0\8-1Test.deps.json
+C:\Users\Professional\source\repos\8-1Test\bin\Debug\net8.0\8-1Test.runtimeconfig.json
+C:\Users\Professional\source\repos\8-1Test\bin\Debug\net8.0\8-1Test.dll
+C:\Users\Professional\source\repos\8-1Test\bin\Debug\net8.0\8-1Test.pdb
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\8-1Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\8-1Test.AssemblyInfoInputs.cache
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\8-1Test.AssemblyInfo.cs
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\8-1Test.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\8-1Test.dll
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\refint\8-1Test.dll
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\8-1Test.pdb
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\8-1Test.genruntimeconfig.cache
+C:\Users\Professional\source\repos\8-1Test\obj\Debug\net8.0\ref\8-1Test.dll
