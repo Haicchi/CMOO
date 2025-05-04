@@ -2,8 +2,14 @@
 
 namespace ConsoleApp1;
 
+
+
 class Program
 {
+    static void Display(string message)
+    {
+        Console.WriteLine(message);
+    }
     static void Main(string[] args)
     {
       Handler1 handler1 = new Handler1();  
@@ -15,6 +21,8 @@ class Program
       Item[] items = { item1, item2, item3 };
       valiza1.WorkWithItems += handler1.ItemProcedure;
       valiza1.WorkWithItems += handler2.ItemProcedure2;
+      valiza1.Notify += Display;
+      
       Console.WriteLine(valiza1.ToString());
       Console.WriteLine(item1.ToString());
       Console.WriteLine(item2.ToString());

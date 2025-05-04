@@ -64,6 +64,10 @@ public class Valiza
     public delegate void AddItemHandler(ref Item[] items,Item item);
     public event AddItemHandler WorkWithItems;
 
+    public delegate void NotifyHandler(string message);
+    public event NotifyHandler Notify;
+    
+
     public void ItemAdd(Item item)
     {
         if (volumeValiza + item.ItemMass < maxVolume)
@@ -72,10 +76,11 @@ public class Valiza
             
             WorkWithItems.Invoke(ref items,item);
             itemcount++;
+            Notify.Invoke("Item added");
         }
         else
         {
-            Console.WriteLine("Too large item no space left");
+            Notify?.Invoke($"Volume exceeded maximum volume.Item isnt added");
             
         }
     }
@@ -85,6 +90,7 @@ public class Valiza
         VolumeValiza -= item.ItemMass;
         WorkWithItems.Invoke(ref items,item);
         itemcount = items.Length;
+        Notify.Invoke("Item deleted");
     }
 
     public override string ToString()
