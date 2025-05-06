@@ -36,14 +36,14 @@ class Program
         }
         MyDelegate2 DayOfProgramer = (DateTime date) => date.DayOfYear == 256;
         Console.WriteLine(DayOfProgramer(DateTime.Today));
-        MyDelegate3 Checker = (string[] words, string text) => words.All(word => text.Contains(word));
+        MyDelegate3 Checker = (string[] words, string text) => words.All(word => text.ToLower().Contains(word.ToLower()));
         MyDelegate3 Checker2 = (string[] words, string text) =>
         {
             int count = 0;
             for (int i = 0; i < words.Length; i++)
             {
                 
-                if (text.Contains(words[i]))
+                if (text.ToLower().Contains(words[i].ToLower()))
                 {
                     count++;
                 }
