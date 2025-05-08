@@ -1,0 +1,15 @@
+D:\C#\LABS\LAB-9\9-3\bin\Debug\net9.0\9-3.exe
+D:\C#\LABS\LAB-9\9-3\bin\Debug\net9.0\9-3.deps.json
+D:\C#\LABS\LAB-9\9-3\bin\Debug\net9.0\9-3.runtimeconfig.json
+D:\C#\LABS\LAB-9\9-3\bin\Debug\net9.0\9-3.dll
+D:\C#\LABS\LAB-9\9-3\bin\Debug\net9.0\9-3.pdb
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\9-3.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\9-3.AssemblyInfoInputs.cache
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\9-3.AssemblyInfo.cs
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\9-3.csproj.CoreCompileInputs.cache
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\9-3.sourcelink.json
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\9-3.dll
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\refint\9-3.dll
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\9-3.pdb
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\9-3.genruntimeconfig.cache
+D:\C#\LABS\LAB-9\9-3\obj\Debug\net9.0\ref\9-3.dll
