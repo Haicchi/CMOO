@@ -7,19 +7,14 @@ class Program
     static void Main(string[] args)
     {
         //BAZA TEXT = D:\\C#\\LABS\\Text.txt BAZA WORDS = D:\\C#\\LABS\\Words.txt
-        Console.WriteLine("Put a path");
-        string path = Console.ReadLine();
-        FileInfo file = new FileInfo(path);
-        if (!file.Exists)
+        string path = "D:\\\\C#\\\\LABS\\\\Text.txt";
+        if (!File.Exists(path))
         {
             Console.WriteLine("File not found");
             return ;
         }
-
-        Console.WriteLine("Put a path to blocked words");
-        string path2 = Console.ReadLine();
-        FileInfo file2 = new FileInfo(path2);
-        if (!file2.Exists)
+        string path2 = "D:\\\\C#\\\\LABS\\\\Words.txt";
+        if (!File.Exists(path2))
         {
             Console.WriteLine("File not found");
             return ;
@@ -27,17 +22,24 @@ class Program
 
         string textlines = File.ReadAllText(path);
         string Words = File.ReadAllText(path2);
-        string[] TextPo = textlines.Split(' ', ',', '.');
-        string[] WordsPo = Words.Split(' ', ',', '.');
+        string[] TextPo = textlines.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        string[] WordsPo = Words.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         for (int i = 0; i < TextPo.Length; i++)
         {
             if (Words.Contains(TextPo[i]))
             {
                 char[] chars = TextPo[i].ToCharArray();
-                for (int j = 0; j < chars.Length; j++)
-                {
-                    chars[j] = '*';
-                }
+                
+                
+                    for (int j = 0; j < chars.Length; j++)
+                    {
+                        if (chars[j] != ',' && chars[j] != '.')
+                        {
+                            chars[j] = '*';
+                        }
+                    }
+                
+
                 TextPo[i] = new string(chars);
             } 
         }
