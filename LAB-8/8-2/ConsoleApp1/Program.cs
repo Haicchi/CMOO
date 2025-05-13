@@ -20,7 +20,7 @@ class Program
       Item item3 = Creator.RandomItem();
       Item[] items = { item1, item2, item3 };
       valiza1.WorkWithItems += handler1.ItemProcedure;
-      valiza1.WorkWithItems += handler2.ItemProcedure2;
+      valiza1.ItemDeleter += handler2.ItemProcedure2;
       valiza1.Notify += Display;
       
       Console.WriteLine(valiza1.ToString());

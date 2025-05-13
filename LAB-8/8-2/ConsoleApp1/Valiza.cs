@@ -63,6 +63,7 @@ public class Valiza
     }
     public delegate void AddItemHandler(ref Item[] items,Item item);
     public event AddItemHandler WorkWithItems;
+    public event AddItemHandler ItemDeleter;
 
     public delegate void NotifyHandler(string message);
     public event NotifyHandler Notify;
@@ -89,7 +90,7 @@ public class Valiza
     public void ItemDelete(Item item)
     {
         VolumeValiza -= item.ItemMass;
-        WorkWithItems.Invoke(ref items,item);
+        ItemDeleter.Invoke(ref items,item);
         itemcount = items.Length;
         Notify.Invoke("Item deleted");
     }
