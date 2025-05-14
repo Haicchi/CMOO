@@ -6,16 +6,16 @@ public class Song
   private string songAuthor;
   private string composer;
   private int year;
-  private string text;
+  private string pathtotext;
   private string[] vikonavci;
 
-  public Song(string songName, string songAuthor, string composer, int year, string text,string[] vikonavci)
+  public Song(string songName, string songAuthor, string composer, int year, string pathtotext,string[] vikonavci)
   {
     this.songName = songName;
     this.songAuthor = songAuthor;
     this.composer = composer;
     this.year = year;
-    this.text = text;
+    this.pathtotext = pathtotext;
     this.vikonavci = vikonavci;
   }
 
@@ -25,7 +25,7 @@ public class Song
     songAuthor = "";
     composer = "";
     year = 0;
-    text = "";
+    pathtotext = "";
     vikonavci = new string[0];
   }
 
@@ -83,15 +83,15 @@ public class Song
 
   public string Text
   {
-    get{ return text; }
-    set
-    {
-      if (value == null)
-      {
-        throw new ArgumentNullException("value");
-      }
-      text = value;
-    }
+    get{ return pathtotext; }
+    // set
+    // {
+    //   if (value == null)
+    //   {
+    //     throw new ArgumentNullException("value");
+    //   }
+    //   pathtotext = value;
+    // }
   }
 
   public string[] Vikonavci
@@ -116,7 +116,7 @@ public class Song
   }
   public override string ToString()
   {
-    return $"Song name -  {songName} | Song author - {songAuthor} | Composer - {composer}  | Year - {year} | Text - {text} | Vikonavci - {string.Join(",", vikonavci)}";
+    return $"Song name -  {songName} | Song author - {songAuthor} | Composer - {composer}  | Year - {year} | Vikonavci - {string.Join(",", vikonavci)}";
   }
   
 }

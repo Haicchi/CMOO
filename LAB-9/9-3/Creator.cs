@@ -7,7 +7,8 @@ public class Creator
     static private string[] songAuthors = {"Володимир Івасюк","Дмитро Павличко","Михайло Старицький"};
     static private string[] composer = {"Микола Лисенко","Олександр Білаш","Володимир Івасюк"};
     static private int[] years = { 2015, 2016, 2017, 2019, 2020};
-    static private string[] texts = {"Ти признайся мені, звідки в тебе ті чари," + "\nЯ без тебе всі дні у полоні печалі." + "\nМоже десь у лісах ти чаклуєш ночами," + "\nМожеш зілля якесь вариш ти під дубами." + "","Як я був молодий, у похід вирушав," + "\nМене мати старенька в дорогу пускала." + "\nДала мені вишитий рушник на плечі," + "\nІ сказала: \"Вертайся, синочку, скоріше\"." + "","Ніч яка місячна, зоряна, ясная,\n" + "Видно, хоч голки збирай.\nВийди, коханая," + " працею зморена,\nХоч на хвилиночку в гай." };
+    // static private string[] texts = {"D:\\C#\\LABS\\LAB-9\\9-3\bin\\Debug\\net9.0\\text1.txt","D:\\C#\\LABS\\LAB-9\\9-3\bin\\Debug\\net9.0\\text2.txt","D:\\C#\\LABS\\LAB-9\\9-3\bin\\Debug\\net9.0\\text3.txt"};
+    static private string[] texts = {"text1.txt","text2.txt","text3.txt"};
     static private string[] vikonavci = {"Володимир Івасюк","Назарій Яремчук","Софія Ротару"};
 
     public static string RandomSongName()

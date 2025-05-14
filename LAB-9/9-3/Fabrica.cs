@@ -1,8 +1,21 @@
-﻿namespace _9_3;
+﻿using System.Text;
+using System.Text.Encodings.Web;
+using System.Text.Json;
+using System.Text.Unicode;
+using System.Threading.Channels;
+
+namespace _9_3;
 
 public static class Fabrica
 {
-    public static void Show(ref Song[] songs){
+    private static Song[] songs;
+
+    static Fabrica()
+    {
+        songs = new Song[0];
+    }
+    
+    public static void Show(){
 
         for (int i = 0; i < songs.Length; i++)
         {
@@ -11,27 +24,27 @@ public static class Fabrica
     }
 
 
-public static void AddSong(ref Song[] songs,Song song)
+public static void AddSong(Song song)
     {
         Array.Resize(ref songs, songs.Length + 1);
         songs[songs.Length - 1] = song;
     }
-    public static void Delete(ref Song []songs,Song song)
+    public static void Delete(Song song)
     {
         Song[] temp = new Song[songs.Length - 1];
         int index = Array.IndexOf(songs, song);
-        if (index == null)
+        if (index < 0 )
         {
             Console.WriteLine("Cannot delete null element");
         
         }
         
-        for (int i = 0; i < songs.Length; i++)
+        for (int i = 0,j=0; i < songs.Length; i++)
         {
             if (i != index)
             {
-                temp[i] = songs[i];
-                
+                temp[j] = songs[i];
+                j++;
             }
         }
         
@@ -40,7 +53,7 @@ public static void AddSong(ref Song[] songs,Song song)
         
     }
 
-    public static void SearhByYear(ref Song[] songs, int year)
+    public static void SearhByYear(int year)
     {
         for (int i = 0; i < songs.Length; i++)
         {
@@ -53,7 +66,7 @@ public static void AddSong(ref Song[] songs,Song song)
         }
     }
 
-    public static void SearchByAuthor(ref Song[] songs, string author)
+    public static void SearchByAuthor(string author)
     {
         for (int i = 0; i < songs.Length; i++)
         {
@@ -66,7 +79,7 @@ public static void AddSong(ref Song[] songs,Song song)
         }
     }
 
-    public static void SearchByVikonavec(ref Song[] songs, string vikonavec)
+    public static void SearchByVikonavec(string vikonavec)
     {
         for (int i = 0; i < songs.Length; i++)
         {
@@ -79,86 +92,45 @@ public static void AddSong(ref Song[] songs,Song song)
         }
     }
 
-    public static void SaveintoFle(ref Song[] songs, string path)
+    public static async Task SaveintoFile(string filename)
     {
-        FileInfo file = new FileInfo(path);
-        if (!file.Exists)
+        using (FileStream fs = new FileStream(filename, FileMode.Create))
         {
-            Console.WriteLine("File not found");
-            return ;
+            await JsonSerializer.SerializeAsync(fs, songs);
+            Console.WriteLine("soxraneno");
         }
-
-        for (int i = 0; i < songs.Length; i++)
-        {
-            File.AppendAllText(path, songs[i].ToString());
-            File.AppendAllText(path, Environment.NewLine);
-        }
+    }
+    
+    public static void DownloadFromFile(string filename)
+    {
+            using (FileStream fs = new FileStream(filename, FileMode.Open))
+            {
+                if (!File.Exists(filename))
+                {
+                    Console.WriteLine($"File {filename} does not exist");
+                }
+                else
+                {
+                    songs = JsonSerializer.Deserialize<Song[]>(fs);
+                    Console.WriteLine("downloaded");
+                }
+            }
+        
+       
         
     }
 
-    public static void Download(ref Song[] songs, string path)
+    public static void ShowTextOfSong(Song song)
     {
-        FileInfo file = new FileInfo(path);
-        if (!file.Exists)
+        Console.WriteLine($"Text of {song.SongName}");
+        string path = song.Text;
+        Console.WriteLine(path);
+
+        using (StreamReader sr = new StreamReader(path))
         {
-            Console.WriteLine("File not found");
-            return ;
+            string text = sr.ReadToEnd();
+            Console.WriteLine(text);
         }
-        string text = File.ReadAllText(path);
-        Song[] temp = new Song[text.Length];
-        string[] lines = text.Split($"{Environment.NewLine}");
-        for (int i = 0; i < temp.Length; i++)
-        {
-            string[] parts = lines[i].Split("|");
-            temp[i].SongName = parts[0].Trim();
-            temp[i].SongAuthor = parts[1].Trim();
-            temp[i].Composer = parts[2].Trim();
-            temp[i].Year = int.Parse(parts[3].Trim());
-            temp[i].Text = parts[4].Trim();
-            temp[i].Vikonavci = parts[5].Trim().Split(',');
-        }
-        songs = temp;
-    }
-
-    public static void DownloadFromFile(string path, out Song[] songs)
-    {
-        songs = null;
-
-        if (!File.Exists(path))
-        {
-            Console.WriteLine("no file");
-            return;
-        }
-
-        
-        var lines = File.ReadAllLines(path);
-        Song[] temp = new Song[lines.Length];
-        int count = 0;
-
-        foreach (string line in lines)
-        {
-            if (string.IsNullOrWhiteSpace(line)) continue;
-
-            string[] parts = line.Split('|');
-            if (parts.Length != 6) continue;
-
-            string name = parts[0].Replace("Song name -", "").Trim();
-            string author = parts[1].Replace("Song author -", "").Trim();
-            string composer = parts[2].Replace("Composer -", "").Trim();
-            string yearStr = parts[3].Replace("Year -", "").Trim();
-            string text = parts[4].Replace("Text -", "").Trim();
-            string[] performers = parts[5].Replace("Vikonavci -", "").Trim().Split(',', StringSplitOptions.RemoveEmptyEntries);
-
-            int year = int.TryParse(yearStr, out int y) ? y : 0;
-
-            temp[count] = new Song(name, author, composer, year, text, performers);
-            count++;
-        }
-        songs = new Song[count];
-        Array.Copy(temp, songs, count);
-
-        Console.WriteLine($"Downloaded {songs.Length}.");
-      
     }
 
 }

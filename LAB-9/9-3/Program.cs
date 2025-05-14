@@ -8,7 +8,7 @@ class Program
         Song song2 = Creator.RandomSong();
         Song song3 = Creator.RandomSong();
         Song song4 = Creator.RandomSong();
-        Song[] songs = { song1, song2, song3 };
+        // Song[] songs = { song1, song2, song3 };
         // Fabrica.Show(ref songs);
         // Fabrica.AddSong(ref songs,song4);
         // Console.WriteLine("DMADMAIO");
@@ -22,10 +22,23 @@ class Program
         // Fabrica.SearchByVikonavec(ref songs,vikonavec);
         string path = @"D:\C#\LABS\t9.txt";
         string path2 = @"D:\C#\LABS\t10.txt";
-        Fabrica.SaveintoFle(ref songs,path);
-        Song[] songs2 =  null;
-        Fabrica.DownloadFromFile(path2,out songs2);
-       Fabrica.Show(ref songs2);
+        string filename = "musiccol.json";
+        
+        Fabrica.AddSong(song1);
+        Fabrica.AddSong(song2);
+        Fabrica.AddSong(song3);
+        Fabrica.AddSong(song4);
+        Fabrica.Show();
+        Fabrica.SaveintoFile(filename);
+        Fabrica.Delete(song1);
+        Fabrica.Delete(song2);
+        Fabrica.Delete(song3);
+        Fabrica.Delete(song4);
+        Fabrica.DownloadFromFile(filename);
+        
+       Fabrica.ShowTextOfSong(song1);
+        
+        
     }
      
 
