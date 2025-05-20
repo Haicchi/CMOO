@@ -17,19 +17,19 @@ class Program
         int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9,14,21,28 };
         Predicate <int> Kratne = seven;
         
-        MyDelegate4 dabe = (int[] a, Predicate<int> b) =>
+        MyDelegate4 dabe = (int[] a,Predicate<int> b) =>
         {
             int count = 0;
             foreach (var variable in a)
             {
-                if (b(variable))
+                if (Kratne(variable))
                 {
                     count++;
                 }
             }
             return count;
         };
-        Console.WriteLine(dabe(a,seven));
+        Console.WriteLine(dabe(a,Kratne));
         // string[] words = {"wolf","fox"};
         // string text = "wolf lives in forest";
         // string tex2 = "wolf and fox lives in forest";

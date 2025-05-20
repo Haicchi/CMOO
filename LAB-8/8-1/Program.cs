@@ -12,20 +12,20 @@ class Program
 
     static void Main(string[] args)
     {
-        showTime += new Action(Methods.ShowTime);
+        showTime += Methods.ShowTime;
         showTime();
-        showDate += new Action(Methods.ShowDate);
+        showDate += Methods.ShowDate;
         showDate();
-        showDayOfWeek += new Action(Methods.ShowDay);
+        showDayOfWeek += Methods.ShowDay;
         showDayOfWeek();
-        Prostoi += new Predicate<int>(Methods.ProstoeLiChislo);
+        Prostoi += Methods.ProstoeLiChislo;
         Console.WriteLine(Prostoi(11));
         Console.WriteLine(Prostoi(12));
-        Fibonacci += new Predicate<int>(Methods.IsFiba);
+        Fibonacci += (Methods.IsFiba);
         Console.WriteLine(Fibonacci(5));
-        triangle += new Func<double, double, double>(Methods.Pramokytni);
+        triangle += Methods.Pramokytni;
         Console.WriteLine(triangle(5,7));
-        Pramokytnik += new Func<double, double, double>(Methods.Pryamougolnik);
+        Pramokytnik += Methods.Pryamougolnik;
         Console.WriteLine(Pramokytnik(5,7));
     }
 }
