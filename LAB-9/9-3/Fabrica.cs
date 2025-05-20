@@ -94,7 +94,7 @@ public static void AddSong(Song song)
 
     public static async Task SaveintoFile(string filename)
     {
-        using (FileStream fs = new FileStream(filename, FileMode.Create))
+        using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate))
         {
             await JsonSerializer.SerializeAsync(fs, songs);
             Console.WriteLine("soxraneno");
@@ -103,7 +103,7 @@ public static void AddSong(Song song)
     
     public static void DownloadFromFile(string filename)
     {
-            using (FileStream fs = new FileStream(filename, FileMode.Open))
+            using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate))
             {
                 if (!File.Exists(filename))
                 {

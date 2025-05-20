@@ -1,10 +1,11 @@
-﻿using System.Threading.Channels;
+﻿using System.Text.Json;
+using System.Threading.Channels;
 
 namespace _9_2;
 
 class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         //BAZA TEXT = D:\\C#\\LABS\\Text.txt BAZA WORDS = D:\\C#\\LABS\\Words.txt
         string path = "D:\\\\C#\\\\LABS\\\\Text.txt";
@@ -47,6 +48,10 @@ class Program
         string path3 = Console.ReadLine();
 
         string vivodtext =string.Join(" ", TextPo);
-        File.WriteAllText(path3, vivodtext);
+        using (FileStream fs = new FileStream("textsaved.json", FileMode.OpenOrCreate))
+        {
+            await JsonSerializer.SerializeAsync(fs,vivodtext);
+            Console.WriteLine("Soxraneno");
+        }
     }
 }
