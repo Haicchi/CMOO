@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Professional\\source\\repos\\studenti\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30AA5150-0433-4E99-AC4D-2406CDC62D1D}|studenti.csproj|c:\\users\\professional\\source\\repos\\studenti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30AA5150-0433-4E99-AC4D-2406CDC62D1D}|studenti.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30AA5150-0433-4E99-AC4D-2406CDC62D1D}|studenti.csproj|c:\\users\\professional\\source\\repos\\studenti\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30AA5150-0433-4E99-AC4D-2406CDC62D1D}|studenti.csproj|solutionrelative:factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30AA5150-0433-4E99-AC4D-2406CDC62D1D}|studenti.csproj|c:\\users\\professional\\source\\repos\\studenti\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30AA5150-0433-4E99-AC4D-2406CDC62D1D}|studenti.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30AA5150-0433-4E99-AC4D-2406CDC62D1D}|studenti.csproj|c:\\users\\professional\\source\\repos\\studenti\\creator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30AA5150-0433-4E99-AC4D-2406CDC62D1D}|studenti.csproj|solutionrelative:creator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Factory.cs",
+              "DocumentMoniker": "C:\\Users\\Professional\\source\\repos\\studenti\\Factory.cs",
+              "RelativeDocumentMoniker": "Factory.cs",
+              "ToolTip": "C:\\Users\\Professional\\source\\repos\\studenti\\Factory.cs*",
+              "RelativeToolTip": "Factory.cs*",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwEwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T09:35:24.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Creator.cs",
+              "DocumentMoniker": "C:\\Users\\Professional\\source\\repos\\studenti\\Creator.cs",
+              "RelativeDocumentMoniker": "Creator.cs",
+              "ToolTip": "C:\\Users\\Professional\\source\\repos\\studenti\\Creator.cs",
+              "RelativeToolTip": "Creator.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAawC0AAAATAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T09:23:52.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Professional\\source\\repos\\studenti\\Student.cs",
+              "RelativeDocumentMoniker": "Student.cs",
+              "ToolTip": "C:\\Users\\Professional\\source\\repos\\studenti\\Student.cs",
+              "RelativeToolTip": "Student.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wDEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T09:16:30.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Professional\\source\\repos\\studenti\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Professional\\source\\repos\\studenti\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T09:15:59.178Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
