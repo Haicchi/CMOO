@@ -27,6 +27,18 @@ namespace studenti
             }
         }
 
+        public static void CheckInfoAboutCourses()
+        {
+            for (int i = 0; i < students.Length; i++)
+            {
+                Console.WriteLine($"Student number {i+1}: {students[i]}");
+                for (int j = 0; j < students[i].Courses.Length; j++)
+                {
+                    Console.WriteLine($"Course Info {j+1}: {students[i].Courses[j].ToString()}");
+                }
+            }
+        }
+
         public static bool CanHopOn(Student student)
         {
             int courseneeded = 3;

@@ -14,7 +14,8 @@ namespace studenti
             Factory.GroupCreation(studs);
             Console.WriteLine("Students that passed to the group");
             Factory.Show();
-           
+            Console.WriteLine("Courcases that passed to the group");
+            Factory.CheckInfoAboutCourses();
         }
     }
 }
