@@ -12,7 +12,7 @@ namespace studenti
             Student[] studs = {student1, student2};
             Student[] studs2 = null;
             Factory.GroupCreation(studs);
-           
+            Console.WriteLine("Students that passed to the group");
             Factory.Show();
            
         }

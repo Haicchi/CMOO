@@ -46,7 +46,7 @@ namespace studenti
                 {
                     for (int k = 0; k < students[i].Courses.Length; k++)
                     {
-                        if (student.Courses[j] == students[i].Courses[k])
+                        if (student.Courses[j].CourseName == students[i].Courses[k].CourseName)
                         {
                             count++;
                             break;

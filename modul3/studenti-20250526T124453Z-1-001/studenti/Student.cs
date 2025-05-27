@@ -13,7 +13,7 @@ namespace studenti
         private int age;
         private int yearoflearning;
         private string specialization;
-        private string[] courses;
+        private Courcess[] courses;
 
         public Student()
         {
@@ -22,9 +22,9 @@ namespace studenti
             age = 0;
             yearoflearning = 0;
             specialization = " ";
-            courses = new string[0];
+            courses = new Courcess[0];
         }
-        public Student(string name, string surname, int age, int yearoflearning, string specialization, string[] courses)
+        public Student(string name, string surname, int age, int yearoflearning, string specialization, Courcess[] courses)
         {
             this.name = name;
             this.surname = surname;
@@ -34,7 +34,7 @@ namespace studenti
             this.courses = courses;
         }
 
-        public string[] Courses
+        public Courcess[] Courses
         {
             get { return courses; }
             set {
@@ -47,11 +47,23 @@ namespace studenti
         public string Specialization
         {
             get { return specialization; }
-            set { specialization = value; }
+            set
+            {
+                if (String.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException("value");
+                }
+                specialization = value;
+            }
         }
         public override string ToString()
         {
-            return $"Name = {name} / Surname = {surname} / Age = {age} / Year of Learning = {yearoflearning} / Specialization = {specialization} / Courses - {string.Join(',',courses)}";
+            string[] coucenames = new string[courses.Length];
+            for (int i = 0; i < courses.Length; i++)
+            {
+                coucenames[i] = courses[i].CourseName;
+            }
+            return $"Name = {name} / Surname = {surname} / Age = {age} / Year of Learning = {yearoflearning} / Specialization = {specialization} / Courses - {string.Join(',',coucenames)}";
         }
     }
 }
